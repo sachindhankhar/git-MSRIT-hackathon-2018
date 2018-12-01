@@ -1,0 +1,28 @@
+
+
+
+SHOPKEEPER DETAILS TABLE 
+
+$q0="create table(fname char(10),lname char(10),phone number(10),pincode number(6),password varchar 2(10),address varchar2(10));";
+	if (!mysqli_query($con,$q0))
+			{
+				die('Error: ' . mysqli_error($con));
+			}
+
+
+MEDICIne updated by shopkeeper
+	phone,generic_medicine_name,price
+
+	
+brand_medicines				(maintained by administrator)
+
+	name_of_brand_medicine,salts    
+
+
+
+generic_medicines				(maintained by administrator)
+
+	name_of_generic_medicine,salts  	
+
+
+

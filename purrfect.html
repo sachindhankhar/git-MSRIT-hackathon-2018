@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Happy MEds </title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+	<style type="text/css">
+	 
+h2{
+text-align:center;
+margin-top:40px;
+}
+		
+	
+		.jumbotron{
+			background-color:transparent;
+			position: absolute;
+				bottom:50%;
+				left:65%;
+				padding-top: 20px;
+				padding-bottom: 20px;
+				padding-left: 30px;
+				padding-right:30px;
+				
+
+		}
+		.container .jumbotron, .container-fluid .jumbotron {
+			margin: 300px 0px 0px 0px;
+		}
+
+		.btn-default{
+			background-color: #99ff99;
+		}
+		hr{
+			
+			size: 180px;
+
+		}
+
+	</style>
+</head>
+<body background="https://www.pixelstalk.net/wp-content/uploads/images1/HD-medicine-wallpapers.jpg" >
+
+	
+ 	<nav class="navbar navbar-inverse navbar-fixed-top">
+ 		<div class="container">
+		<div class="navbar-header">
+			<a href="#" class="navbar-brand"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Happy MEds</a>
+		</div>
+	
+	<ul class="nav navbar-nav">
+		<li><a href="#">Home</a></li>
+		<li><a href="about.html">About</a></li>
+	</ul>
+	<ul class="nav navbar-nav navbar-right">
+		<li><a href="signup.html">Signup <i class="fab fa-google-plus"></i></a></li>
+		<li><a href="login.php">Login <i class="fas fa-user-alt"></i></a></li>
+	</ul>
+	
+	</nav>
+	
+	</div>
+   
+
+   <div class="container">
+   	<div class="jumbotron">
+   		<h3><span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Enter the medicine name:</h3>
+		<form action="search_result_page.php" method="post">
+   		<input type="text" name="medname" size="20px" placeholder="medicine name"><br/>
+		<input type="number" name="pincode" size="20px" placeholder="your pincode"><br/>
+   		   		<button class="btn btn-link btn-lg"><span class="glyphicon glyphicon-search" aria-hidden="true"></span> Search</button>  
+   		 </form>
+   	</div>
+   </div>
+	
+</body>
+</html>

@@ -1,0 +1,180 @@
+<html>
+<head>
+<title>
+	User signup
+</title><link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">s">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+	<style type="text/css"> 
+	
+	
+	#divlogin{
+            position: absolute;
+                top:23%;
+                left:30.8%;
+                right:30.6%;
+                bottom:24%;
+                
+                padding-top: 10px;
+                padding-bottom: 20px;
+                padding-left: 20px;
+                padding-right:20px;
+                
+                backface-visibility: 40%;
+
+                
+        }
+#d1
+{ 
+  padding:1%;
+  height:120px;
+  color: white; 
+  background-color:green; 
+  margin: 2px;  
+} 
+#im
+{ 
+  padding:1%;
+  eight:400px; 
+  ackground-color:yellow 
+  argin: 2px;
+  position:absolute;
+  left:-80%;
+  top:30%;
+  width:50%;  
+}
+#d2
+{
+ position:absolute;
+ left:55%;
+ width:50%;
+ top:30%;
+
+ padding-top: 20px;
+				padding-bottom: 20px;
+				padding-left: 30px;
+				padding-right:30px;
+			}
+h1{text-align:center;
+		padding: 20px;
+	text-decoration: underline;}
+	body {
+    background-image: url("https://i.ytimg.com/vi/5IwK-IBQs_E/maxresdefault.jpg");
+    background-repeat: strech;
+    background-position: center;
+    background-attachment: fixed;
+} 
+</style>
+<script type="text/javascript">
+   <!--
+      // Form validation code will come here.
+      function validate()
+      {
+      
+         if( document.myForm.fname.value == "" )
+         {
+            alert( "Please provide your name!" );
+            document.myForm.fname.focus() ;
+            return false;
+         }
+		 if( document.myForm.lname.value == "" )
+         {
+            alert( "Please provide your  last name!" );
+            document.myForm.lname.focus() ;
+            return false;
+         }
+         
+         if( document.myForm.phone.value == "" )
+         {
+            alert( "Please provide your mobile no!" );
+            document.myForm.phone.focus() ;
+            return false;
+         }
+         
+        
+         
+         if( document.myForm.Country.value == "-1" )
+         {
+            alert( "Please provide your country!" );
+            return false;
+         }
+		 		var onlyalphabets=/^[A-Za-z]+$/;
+		var onlymobile=/^\d{10}$/;
+		var pincode=/^\d{6}$/;
+
+		if(!onlyalphabets.test(myForm.fname.value)){
+			errarr.push("FIRST NAME REQUIRES ONLY ALPHABETS");
+			//form.fname.focus();
+			
+		}
+		if(!onlyalphabets.test(myForm.lname.value)){
+			errarr.push("LAST NAME REQUIRES ONLY ALPHABETS");
+			//form.lname.focus();
+			
+		}
+		if(!onlymobile.test(myForm.phone.value)){
+			errarr.push("MOBILE NUMBER REQUIRES EXACTLY 10 DIGITS");
+			//form.phone.focus();
+			
+		}
+		if(!pincode.test(myForm.pincode.value)){
+			errarr.push("PINCODE REQUIRES EXACTLY 6 DIGITS");
+			//form.fname.focus();
+			
+		}
+
+		if(errarr.length>0){
+			var st="ERROR:\n\n";
+			for(var i=0;i<errarr.length;i++){
+				var k=i+1;
+				var kstr=k.toString();
+
+				st=st+kstr+"."+" "+errarr[i]+"\n";
+			}
+			alert(st);
+
+		}
+         return( true );
+      }
+   //-->
+</script>
+</head>
+<body >
+
+	
+ 	<nav class="navbar navbar-inverse navbar-fixed-top">
+ 		<div class="container">
+		<div class="navbar-header">
+			<a href="#" class="navbar-brand">Happy MEds</a>
+		</div>
+	
+	<ul class="nav navbar-nav">
+		<li><a href="#">Home</a></li>
+		<li><a href="#">About</a></li>
+	</ul>
+	
+	
+	</nav>
+	
+	</div>
+
+
+
+	
+<div id="divlogin">
+<h2><span class="glyphicon glyphicon-user" aria-hidden="true"></span>Create an account</h2>
+	<form name="myForm" action="http://localhost/try/shopkeeper_signup.php" method="post" onsubmit="return(validate())">
+	<table>
+		
+		<tr><td><input type="text" class="form-control" placeholder="first name" style="padding-bottom:6px; padding-top:6px" name="fname"></td><td><input type="text"class="form-control" placeholder="last name" name="lname" style="padding-bottom:6px; padding-top:6px"></td></tr>
+		<tr colspan="2"><td ><input type="tel" class="form-control"  placeholder="mobile_no" style="padding-bottom:6px; padding-top:6px" name="phone"></td></tr>
+		<tr><td colspan="2"><input type="password" class="form-control" placeholder="new password" style="padding-bottom:6px; padding-top:6px" name="password"></td></tr>
+		<tr><td colspan="2"><textarea type="textarea" class="form-control"  placeholder="address" style="padding-bottom:6px; padding-top:6px" name="address" rows="4" cols="20"></textarea></td></tr>
+		<tr><td colspan="2"><input type="number" class="form-control" placeholder="pincode" style="padding-bottom:6px; padding-top:6px" name="pincode"></td></tr><br>
+		
+		<tr><td colspan="2"><input type="submit" value="Sign up" class="btn btn-success btn-lg"style="padding-bottom:6px; padding-top:6px" ></td></tr>
+
+	</table></form>
+</div>
+
+</body>
+</html>
